@@ -1,0 +1,21 @@
+{% extends 'travel_wishlist/base.html' %}
+{% block content %}
+<!-- html for places_visited page -->
+<h1>Places you have visited</h1>
+
+{% if visited %}
+<!-- ul = unordered list of items , li = list item-->
+<ul>
+    <!-- for each place marked as visited, display place -->
+    {% for place in visited %}
+    <li>{{ place.name }}</li>
+    {% endfor %}
+</ul>
+
+{% else %}
+<!-- if no places are marked as visited, let the user know -->
+    <p>You have not visited any places yet.</p>
+
+{% endif %}
+
+{% endblock %}

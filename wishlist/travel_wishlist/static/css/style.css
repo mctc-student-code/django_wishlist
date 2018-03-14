@@ -1,0 +1,19 @@
+span.visited-text {
+    display: inline-block;
+    width: 70%
+}
+
+form.visited-form {
+    display: inline;
+}
+
+div.wishlist-place {
+    margin: 20px
+}
+
+label {
+    display: inline-block;
+    padding-right: 8px;
+}
+/* styling for the way certain things look on the webpage, I need to learn
+more about css  */
